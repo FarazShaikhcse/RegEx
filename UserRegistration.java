@@ -13,13 +13,13 @@ public class UserRegistration {
 		
 		final String mob = "[1-9][0-9]\\s[1-9][0-9]{9}";
 		
-		final String passwordpt = "[0-9A-Za-z]{8,}";
+		final String passwordpt = "([a-zA-Z0-9])*[A-Z]([a-zA-Z0-9])*{8,}";
 
 		String firstName = "Faraz";
 		String lastName = "Shaikh";
 		String email = "farazssashaikh@gmail.com";
 		String mobno = "91 9876543210";
-		String password = "hypesquad";
+		String password = "hypeSquad";
 		
 		if (Pattern.matches(first_name_pt, firstName)) {
 
