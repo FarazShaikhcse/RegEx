@@ -13,7 +13,7 @@ public class UserRegistration {
 		
 		final String mob = "[1-9][0-9]\\s[1-9][0-9]{9}";
 		
-		final String passwordpt = "([a-zA-Z0-9])*[A-Z]([a-zA-Z0-9])*{8,}";
+		final String passwordpt = "(?=.*[A-Z])(?=.*[0-9])[a-zA-Z0-9!@?*]{8,}";
 
 		String firstName = "Faraz";
 		String lastName = "Shaikh";
