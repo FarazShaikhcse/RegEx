@@ -12,11 +12,14 @@ public class UserRegistration {
 		final String emailpt = username + domain;
 		
 		final String mob = "[1-9][0-9]\\s[1-9][0-9]{9}";
+		
+		final String passwordpt = "[0-9A-Za-z]{8,}";
 
 		String firstName = "Faraz";
 		String lastName = "Shaikh";
 		String email = "farazssashaikh@gmail.com";
 		String mobno = "91 9876543210";
+		String password = "hypesquad";
 		
 		if (Pattern.matches(first_name_pt, firstName)) {
 
@@ -47,6 +50,13 @@ public class UserRegistration {
 		} 
 		else {
 			System.out.println("Mobile number is invalid");
+		}
+		if (Pattern.matches(passwordpt, password)) { 
+			
+			System.out.println("Password is valid");
+		} 
+		else {
+			System.out.println("Password is invalid");
 		}
 
 	}
