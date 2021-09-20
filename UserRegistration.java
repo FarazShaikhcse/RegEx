@@ -16,7 +16,7 @@ public class UserRegistration {
 		String firstName = "Faraz";
 		String lastName = "Shaikh";
 		String email[] = { "abc@yahoo.com", "abc-100@yahoo.com", "abc.100@yahoo.com", "abc111@abc.con", "abc-100@abc.net", "abc.100@abc.com.au", "abc@1.com",
-				"abc@gmail.com.com", "abc+100@gmail.com" };
+				"abc@gmail.com.com", "abc+100@gmail.com" }; //for UC9
 		String mobno = "91 9876543210";
 		String password = "hypeSqu@d11";
 
