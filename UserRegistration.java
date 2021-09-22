@@ -11,16 +11,16 @@ public class UserRegistration {
 
 	final static String passwordpt = "^(?=.*[0-9])(?=.*[A-Z])(?=.*[@#$%^&+=]).{8,}$";
 
+	ValidateUserDetail validateDetail = (pattern, detail) -> Pattern.matches(pattern, detail);
 
+	boolean validate(String pattern, String string) throws UserRegException {
 
-	static boolean validate(String pattern, String string) throws UserRegException {
-
-		if (Pattern.matches(pattern, string)) {
+		if (validateDetail.validateUserDetail(pattern, string)) {
 
 			System.out.println(string + " is valid");
 			return true;
 		} else {
-			
+
 			throw new UserRegException(string + " is invalid");
 		}
 
